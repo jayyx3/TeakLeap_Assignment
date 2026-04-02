@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+.pytest_cache/
+.venv/
+
+# Virtual environments
+venv/
+env/
+
+# Python tooling caches
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
