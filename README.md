@@ -18,7 +18,7 @@ Validation included:
 
 ## Tech Stack
 
-- Python 3.13+
+- Python 3.11+
 - FastAPI
 - SQLAlchemy
 - SQLite
@@ -115,6 +115,16 @@ Request body:
 ```powershell
 python -m pytest -q
 ```
+
+## Deploy on Render (Free)
+
+Use these values when creating the Web Service:
+
+- Runtime: Python
+- Build Command: python -m pip install -r requirements.txt
+- Start Command: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+
+This repo includes [runtime.txt](runtime.txt) to use a stable Python version on Render.
 
 ## Notes
 
