@@ -126,6 +126,11 @@ Use these values when creating the Web Service:
 
 This repo includes [runtime.txt](runtime.txt) to use a stable Python version on Render.
 
+## Live Deployment URLs
+
+- Base URL: https://techleap-candidate-api.onrender.com
+- Swagger UI: https://techleap-candidate-api.onrender.com/docs
+
 ## Notes
 
 - Data is persisted in SQLite.
