@@ -11,6 +11,14 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(title="Candidate Management API", version="1.0.0")
 
 
+@app.get("/")
+def root():
+    return {
+        "message": "Candidate Management API is running.",
+        "docs": "/docs",
+    }
+
+
 @app.post("/candidates", response_model=CandidateRead, status_code=status.HTTP_201_CREATED)
 def create_candidate(payload: CandidateCreate, db: Session = Depends(get_db)):
     candidate = Candidate(
